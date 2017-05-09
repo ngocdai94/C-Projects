@@ -1,5 +1,5 @@
 //Dai Nguyen
-//tictactoe.h
+//tictactoex.h
 //Purpose: This class will use to create a Tic Tac Toe game. The game will
 //display a default size, which is 3x3 board. 
 
@@ -17,7 +17,8 @@ class TicTacToe
 {
  public:
   //constructor: creates TicTacToe game object
-  explicit TicTacToe();
+  //default size = 3
+  explicit TicTacToe(int size = 3);
 
   //copy constructor
   TicTacToe(const TicTacToe& obj);
@@ -51,15 +52,15 @@ class TicTacToe
   //post(conditions): deallocated unused memory
   
  private:
-  const int SIZE = 3;       //size of the game board
-  char **board;             //2D gameboard
+  int size;       //size of the game board
+  char **board;   //2D gameboard
 
   static const char DASH = '-';              //game board frame
   static const char SPACE = ' ';             //blank cell
   static const char VERTICAL = '|';          //game board column
   static const int  COL_WIDTH = 2;           //spaces between column
   static const int ROW_INDEX_WIDTH = 3;      //row index width
-  const string ROW_INDEX_INDENT = "    ";    //4 spaces   
+  const string ROW_INDEX_INDENT = "    ";    //4 spaces  
 };
 
 #endif
