@@ -1,5 +1,4 @@
-CPSC 2600 - Foundations of Computer Science
-
+# CPSC 2600 - Foundations of Computer Science
 Simulate undirected graph on C++
 
 To combine the program. Simply type "make"
