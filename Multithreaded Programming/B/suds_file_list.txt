@@ -1,0 +1,5 @@
+sectionInitGlobals
+sectionEntrySection
+sectionExitSection
+sectionCriticalSection
+sectionRemainderSection
